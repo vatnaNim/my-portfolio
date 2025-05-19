@@ -28,11 +28,6 @@ import { motion } from "framer-motion";
 import { BtnSection } from "../components/ui";
 import { Helmet } from "react-helmet-async";
 
-
-
-
-
-
 interface iHomeProps {
     isDarkMode: boolean;
 }
@@ -73,7 +68,6 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 		container.style.top = "-9999px";
 		container.appendChild(clone);
 		document.body.appendChild(container);
-
 		const options = {
 			margin: [20, 0, 20, 0],
 			filename: "Vatna_Curriculum-Vitae.pdf",
@@ -81,21 +75,21 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 			html2canvas: { scale: 2, useCORS: true },
 			jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
 		};
-
 		html2pdf()
-			.set(options)
-			.from(clone)
-			.save()
-			.then(() => {
-				document.body.removeChild(container);
-			});
+		.set(options)
+		.from(clone)
+		.save()
+		.then(() => {
+			document.body.removeChild(container);
+		});
 	};
 
 
     const convertWord = async () => {
       	const element = document.getElementById("cv-content");
     
-      	if (!element) {
+      	if (!element) 
+		{
 			alert("CV content not found for download.");
 			return;
 		}
@@ -180,7 +174,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 			const url = URL.createObjectURL(blob);
 			const link = document.createElement("a");
 			link.href = url;
-			link.download = "cv-document.doc";
+			link.download = "Vatna_Curriculum-Vitae.doc";
 			document.body.appendChild(link);
 			link.click();
 			
@@ -234,6 +228,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="http://localhost:5173/" />
       		</Helmet>
+			
 			<nav 
 				className="px-6 md:px-4 w-full h-fit">
 				<div 

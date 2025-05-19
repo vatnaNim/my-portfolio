@@ -3,8 +3,14 @@ import { GitHubIcon } from "../assets/icons";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { 
+    CoffeeShop,
     NoImage, 
-    Profile 
+    Photographer, 
+    Portfofio, 
+    Profile, 
+    Restaurants, 
+    SkinCare, 
+    Starbucks
 } from "../assets/images";
 
 interface iProject {
@@ -16,11 +22,11 @@ const Projects = ({isDarkMode}: iProject) => {
     const projectDb = [
         {
             id:1,
-            image: '',
+            image: Portfofio,
             projectName: 'personal portofio',
             discretion: 'A modern, responsive personal portfolio website showcasing my skills, projects, and experience. Built using React with TypeScript, Tailwind CSS, and Material UI, it includes interactive sections, smooth animations, and a clean design to highlight my development work and contact information.',
             status: 'success',
-            gitHub_link:'',
+            gitHub_link:'https://github.com/vatnaNim/My-Portfolio',
             lang: [
                 'react.ts',
                 'tailwind',
@@ -30,7 +36,7 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:2,
-            image: '',
+            image: CoffeeShop,
             projectName: 'Robert coffee(front-end)',
             discretion: 'A front-end training project for a coffee shop website with a clean UI, responsive layout, and modular structure. This project was built for self-learning and runs locally using "npm run dev". It integrates with the "Robert Coffee (Back-End)" service for login authentication and uses REST APIs for data handling and communication.',
             status: 'pending',
@@ -58,9 +64,9 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:4,
-            image: '',
+            image: Photographer,
             projectName: 'photographer',
-            discretion: 'A Nuxt.js project created to deepen my understanding of modern frontend frameworks and REST API integration. The application showcases photographer profiles and testimonials, with dynamic data fetched from a backend API. It was developed as a self-learning exercise using TypeScript and Tailwind CSS. The project runs locally using "npm run dev" for the client and "node server.js" for the backend.',
+            discretion: 'A Nuxt.js project created to deepen my understanding of modern frontend frameworks and REST API integration. The application showcases photographer profiles and testimonials, with dynamic data fetched from a backend API. It was developed as a self-learning exercise using TypeScript and Tailwind CSS. The project runs locally using "npm run dev" for the client and open one more terminal and run this command-line "npx json-server --watch static/data/photographyDb.json --port 3001" for the backend.',
             status: 'success',
             gitHub_link:'https://github.com/vatnaNim/Personal_Photographer_Project',
             lang: [
@@ -73,7 +79,7 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:5,
-            image: '',
+            image: SkinCare,
             projectName: 'skin care',
             discretion: 'A static website built during my first experience learning a front-end framework. Developed using Nuxt.js, this project simulates a skin care product ordering site, helping me understand the fundamentals of Vue, Tailwind CSS, and component-based development. It was a personal learning project focused on layout structure, styling, and static content rendering.',
             status: 'success',
@@ -88,7 +94,7 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:6,
-            image: '',
+            image: Restaurants,
             projectName: 'Restaurants',
             discretion: 'A static website built during my first experience learning a front-end framework. Developed using Nuxt.js, this project simulates a skin care product ordering site, helping me understand the fundamentals of Vue, Tailwind CSS, and component-based development. It was a personal learning project focused on layout structure, styling, and static content rendering.',
             status: 'success',
@@ -103,7 +109,7 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:7,
-            image: '',
+            image: Starbucks,
             projectName: 'starbuck',
             discretion: 'A static website built during my first experience learning a front-end framework. Developed using Nuxt.js, this project simulates a skin care product ordering site and helped me understand the fundamentals of Vue, Tailwind CSS, and component-based development. It was a personal learning project focused on layout structure, styling, and rendering static content effectively.',
             status: 'success',
@@ -116,7 +122,7 @@ const Projects = ({isDarkMode}: iProject) => {
         },
         {
             id:8,
-            image: '',
+            image: 'https://github.com/vatnaNim/school-project',
             projectName: 'Html school assigment',
             discretion: 'A class assignment project created to demonstrate fundamental web development skills using HTML, CSS, and JavaScript. The project includes multiple static pages with structured layouts, interactive elements, and responsive styling, following the professor’s guidelines to fulfill academic requirements and reinforce core front-end concepts.',
             status: 'success',

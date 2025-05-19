@@ -15,7 +15,12 @@ import GTech from './gtech.jpg';
 import Pedro from './pedro.png';
 import KiwiMart from './kiwi-mart.png';
 import NoImage from './no-image.jpg';
-
+import Portfofio from './portfofio.webp';
+import CoffeeShop from './coffee-shop.webp';
+import Photographer from './photographer.webp';
+import Starbucks from './starbuck.webp';
+import SkinCare from './starbuck.webp';
+import Restaurants from './restaurants.webp';
 
 export {
     Logo,
@@ -33,5 +38,11 @@ export {
     GTech,
     Pedro,
     KiwiMart,
-    NoImage
+    NoImage,
+    Portfofio,
+    CoffeeShop,
+    Photographer,
+    Starbucks,
+    SkinCare,
+    Restaurants
 };
