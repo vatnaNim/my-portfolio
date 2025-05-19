@@ -26,7 +26,7 @@ const Projects = ({isDarkMode}: iProject) => {
             projectName: 'personal portofio',
             discretion: 'A modern, responsive personal portfolio website showcasing my skills, projects, and experience. Built using React with TypeScript, Tailwind CSS, and Material UI, it includes interactive sections, smooth animations, and a clean design to highlight my development work and contact information.',
             status: 'success',
-            gitHub_link:'https://github.com/vatnaNim/My-Portfolio',
+            gitHub_link:'https://github.com/vatnaNim/my-portfolio',
             lang: [
                 'react.ts',
                 'tailwind',
