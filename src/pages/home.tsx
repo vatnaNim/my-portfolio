@@ -12,6 +12,7 @@ import {
 	GitHub, 
 	Gmail,
 	LinkIn,
+	NoImage,
 	Profile
 } from "../assets/images";
 import { 
@@ -198,7 +199,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 				id:2,
 				socal_name: "Gmail",
 				socal_icon: Gmail,
-				socal_link: "http://localhost:5173/contect",
+				socal_link: "https://my-portfolio168.vercel.app/contect",
         		socal_class: " hover:bg-white",
 			},
 			{
@@ -256,7 +257,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 							<div 
 								className="space-x-2 flex items-center pt-0 sm:pt-1">
 								<NavLink 
-									to="http://localhost:5173/about">
+									to="https://my-portfolio168.vercel.app/about">
 									<BtnSection 
 										text="about me" 
 										textSize={`text-md sm:text-lg font-medium ${isDarkMode? 'text-sky-400' : 'text-sky-600'}`}
@@ -338,7 +339,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 							? "shadow-blue-500/40 border-blue-500/40 hover:shadow-[0_10px_30px_rgba(96,165,250,0.4)] will-change-transform will-change-box-shadow"
 							: "shadow-gray-300 border-gray-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)] will-change-transform will-change-box-shadow"
 						}`}
-						style={{ backgroundImage: `url(${Profile})` }}>
+						style={{ backgroundImage: `url(${Profile || NoImage })` }}>
 						<div 
 							className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-blue-400 transition-all duration-500 z-10 pointer-events-none" />
 							<motion.h2
