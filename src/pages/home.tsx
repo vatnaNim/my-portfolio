@@ -199,7 +199,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 				id:2,
 				socal_name: "Gmail",
 				socal_icon: Gmail,
-				socal_link: "https://my-portfolio168.vercel.app/contect",
+				socal_link: "https://vatna-portfolio.vercel.app/contect",
         		socal_class: " hover:bg-white",
 			},
 			{
@@ -257,7 +257,7 @@ const Home = ({ isDarkMode }: iHomeProps) => {
 							<div 
 								className="space-x-2 flex items-center pt-0 sm:pt-1">
 								<NavLink 
-									to="https://my-portfolio168.vercel.app/about">
+									to="https://vatna-portfolio.vercel.app/about">
 									<BtnSection 
 										text="about me" 
 										textSize={`text-md sm:text-lg font-medium ${isDarkMode? 'text-sky-400' : 'text-sky-600'}`}
